@@ -1,0 +1,127 @@
+:root{
+    --dourado: #a8b12f;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elemento Principal */
+
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dourado)
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+header .logo{
+    width: 120px;
+    margin-left: 40px;        
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--dourado);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header nav a:hover{
+    color:#fff
+}
+
+/*Filme Principal*/
+
+.filme_principal {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url("../img/anosincriveis.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .descricao {
+    display: flex;
+    max-width: 40%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+}
+
+.botao {
+    background-color: rgba(0,0,0, .50);
+    border: none;
+    color: var(--dourado);
+
+    padding: 15px 30px;
+    margin-right: 5px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 3. ease all;
+    
+}
+
+.botao:hover {
+    background-color: var(--dourado);
+    color: black;
+}
+
+.botao {
+    margin-left: 40px;
+}
+
+.filme_principal .container {
+    width: 99%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+.titulo-carrosel {
+    margin-bottom: 5px;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.item img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.item:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

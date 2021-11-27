@@ -1,0 +1,40 @@
+@media screen and (max-width:700px){
+    header .container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .filme_principal .descricao {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 422px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+    header .container .href{
+        display: none;
+        align-items: center;
+        }
+       
+}
+
+@media screen and (max-widyth: 379px){
+    html ::spelling-error
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
